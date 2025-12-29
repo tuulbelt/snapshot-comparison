@@ -23,7 +23,7 @@ path = "src/main.rs"
 
 [dependencies]
 # Tuulbelt tool composition - odiff for rich diff output
-output-diffing-utility = { path = "../output-diffing-utility" }
+output-diffing-utility = { git = "https://github.com/tuulbelt/output-diffing-utility" }
 
 [dev-dependencies]
 # None - uses built-in test framework

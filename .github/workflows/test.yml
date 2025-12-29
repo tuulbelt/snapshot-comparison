@@ -3,12 +3,8 @@ name: Test
 on:
   push:
     branches: [main]
-    # Only run when this tool's files change (in monorepo context)
-    # Uncomment and adjust when used in monorepo:
-    # paths: ['<tool-name>/**']
   pull_request:
     branches: [main]
-    # paths: ['<tool-name>/**']
 
 # Cancel in-progress runs when new commits are pushed
 concurrency:
