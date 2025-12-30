@@ -42,6 +42,29 @@ jobs:
       - name: Build release
         run: cargo build --release
 
+      - name: Verify zero external dependencies
+        run: |
+          # Check dependencies allows only Tuulbelt git dependencies
+          DEPS=$(awk '/^\[dependencies\]/,/^\[/ {if (!/^\[/ && !/^#/ && NF > 0) print}' Cargo.toml | grep -v 'git.*tuulbelt' || true)
+          if [ -n "$DEPS" ]; then
+            echo "ERROR: External runtime dependencies found!"
+            echo "$DEPS"
+            exit 1
+          fi
+          echo "✓ Zero external dependencies verified (Tuulbelt tools allowed)"
+
+      - name: Setup Node.js (for dogfood)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dogfood dependencies
+        run: npm ci
+
+      - name: Dogfood (flakiness detection)
+        run: npm run dogfood
+
   # Cross-platform testing (optional - enable for releases)
   # Uncomment for comprehensive testing across platforms
   # cross-platform:
