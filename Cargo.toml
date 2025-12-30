@@ -5,9 +5,14 @@ edition = "2021"
 description = "Snapshot testing utility for regression detection with integrated diff output"
 license = "MIT"
 repository = "https://github.com/tuulbelt/snapshot-comparison"
+homepage = "https://github.com/tuulbelt/snapshot-comparison"
+documentation = "https://github.com/tuulbelt/snapshot-comparison#readme"
 readme = "README.md"
 keywords = ["tuulbelt", "snapshot", "testing", "diff", "regression"]
 categories = ["command-line-utilities", "development-tools::testing"]
+
+[package.metadata.docs.rs]
+all-features = true
 
 [lib]
 name = "snapshot_comparison"

@@ -1,5 +1,11 @@
 # Snapshot Comparison / `snapcmp`
 
+[![Tests](https://github.com/tuulbelt/snapshot-comparison/actions/workflows/test.yml/badge.svg)](https://github.com/tuulbelt/snapshot-comparison/actions/workflows/test.yml)
+![Version](https://img.shields.io/badge/version-0.1.0-blue)
+![Rust](https://img.shields.io/badge/rust-1.70+-orange)
+
+**Part of [Tuulbelt](https://github.com/tuulbelt/tuulbelt)** — A collection of focused, zero-dependency tools
+
 Snapshot testing utility for regression detection with integrated diff output.
 
 ## Problem
@@ -13,7 +19,7 @@ Snapshot testing catches regressions by comparing current output against stored 
 
 ## Features
 
-- Zero runtime dependencies (uses output-diffing-utility as path dependency)
+- Zero runtime dependencies (uses [output-diffing-utility](https://github.com/tuulbelt/output-diffing-utility) as git dependency)
 - Cross-platform support (Linux, macOS, Windows)
 - Both library and CLI interfaces
 - Semantic diffing for text, JSON, and binary

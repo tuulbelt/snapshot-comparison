@@ -14,7 +14,7 @@ This document outlines how snapshot-comparison leverages other Tuulbelt tools to
 ```toml
 # Cargo.toml
 [dependencies]
-output-diffing-utility = { path = "../output-diffing-utility" }
+output-diffing-utility = { git = "https://github.com/tuulbelt/output-diffing-utility" }
 ```
 
 ```rust
