@@ -3,6 +3,9 @@
 [![Tests](https://github.com/tuulbelt/snapshot-comparison/actions/workflows/test.yml/badge.svg)](https://github.com/tuulbelt/snapshot-comparison/actions/workflows/test.yml)
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 ![Rust](https://img.shields.io/badge/rust-1.70+-orange)
+![Dogfooded](https://img.shields.io/badge/dogfooded-🐕-purple)
+![Tests](https://img.shields.io/badge/tests-96%2B%20passing-success)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 **Part of [Tuulbelt](https://github.com/tuulbelt/tuulbelt)** — A collection of focused, zero-dependency tools
 
