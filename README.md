@@ -16,7 +16,7 @@ Snapshot testing utility for regression detection with integrated diff output.
 Snapshot testing catches regressions by comparing current output against stored "golden" snapshots. Unlike Jest snapshots or insta, this tool:
 
 - **Zero dependencies** - Pure Rust, no runtime dependencies
-- **Integrated diffs** - Uses output-diffing-utility for rich, semantic diffs
+- **Integrated diffs** - Uses [output-diffing-utility](https://github.com/tuulbelt/output-diffing-utility) for rich, semantic diffs
 - **Format-aware** - Understands text, JSON, and binary data
 - **CLI-first** - Works with any language via stdin/stdout
 
@@ -182,7 +182,7 @@ This is the snapshot content.
 
 ## Integration with odiff
 
-This tool uses [output-diffing-utility](../output-diffing-utility/) as a library dependency for semantic diffing:
+This tool uses [output-diffing-utility](https://github.com/tuulbelt/output-diffing-utility) as a library dependency for semantic diffing:
 
 - **Text**: Unified diff with context lines
 - **JSON**: Semantic comparison showing added/removed/changed fields
@@ -244,8 +244,8 @@ cargo test -- --nocapture  # Show output
 
 This tool uses other Tuulbelt tools:
 
-- **output-diffing-utility** - Provides semantic diff rendering (library dependency)
-- **file-based-semaphore** - Validates concurrent snapshot safety (CLI composition)
+- **[output-diffing-utility](https://github.com/tuulbelt/output-diffing-utility)** - Provides semantic diff rendering (library dependency)
+- **[file-based-semaphore](https://github.com/tuulbelt/file-based-semaphore)** - Validates concurrent snapshot safety (CLI composition)
 
 Validate test determinism and concurrency:
 
