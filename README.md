@@ -277,7 +277,7 @@ The tool prevents path traversal attacks:
 
 ![Demo](docs/demo.gif)
 
-**[▶ View interactive recording on asciinema.org](#)**
+**[▶ View interactive recording on asciinema.org](https://asciinema.org/a/bMuH0jaX9RHOkhtXzJOxh8K8y)**
 
 > Try it online: [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/tuulbelt/tuulbelt/tree/main/snapshot-comparison)
 
